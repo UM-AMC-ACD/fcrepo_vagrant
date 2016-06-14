@@ -1,0 +1,15 @@
+---
+# File: group_vars/vagrant-project
+# Desc: host variables for the test servers for tomcat
+
+# host variable defines the 'logical' name for the host. Used as a variable for various uses
+host: vagrant.example.com
+
+# certprefix is the name of the SSL cert (everything before the .crt and .key). Will also be 
+#  the directory name under /etc/pki where the certs will be stored
+certprefix: vagrant.example.com  
+
+hostpath: .
+grouppath: .
+tomcat_user: u_tomcat
+tomcat_group: g_tomcat

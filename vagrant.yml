@@ -1,0 +1,6 @@
+---
+- name: vagrant playbook
+  hosts: all
+  become: yes
+  roles:
+   - {role: fedora_commons}
